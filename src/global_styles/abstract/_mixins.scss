@@ -1,0 +1,10 @@
+@mixin text_grid ($width, $height){
+    display: flex;
+    flex-direction: column;
+    width: $width;
+    height: $height;
+    row-gap: clamp(0.75rem, 1vw + 1rem, 1.5rem);
+    
+}
+
+
