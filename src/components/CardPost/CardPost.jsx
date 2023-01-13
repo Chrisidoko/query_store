@@ -17,9 +17,10 @@ function CardPost() {
   if (error) {
     return <p>An error occurred: {error.message}</p>;
   }
-  console.log(data);
+  
   return (
     <>
+    
 
       <div className={p.container}>
         <div className={p.hflex}>
