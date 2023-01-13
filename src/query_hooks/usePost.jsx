@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 const getPostById = async (id) => {
   try {
     const { data } = await axios.get(
-      `https://api.unsplash.com/photos/${id}?client_id=t9xaOpzHDCYTxq_6ekdXzdHQlyBrzxUmlO7plPj8nvA`
+      `https://api.unsplash.com/photos/${id}?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
     );
     return data;
   } catch (error) {

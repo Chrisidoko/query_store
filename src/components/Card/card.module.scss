@@ -1,3 +1,4 @@
+//Card Container
 .container {
   width: 22.5%;
   min-width: 240px;
@@ -6,6 +7,7 @@
   transition: all 0.5s ease-in-out;
   margin-bottom: 1rem;
 
+  //Card Picture Container
   .nail {
     position: relative;
     width: 100%;
@@ -26,17 +28,20 @@
       gap: 4px;
       background: rgba(255, 255, 255, 0.3);
       border-radius: 9999px;
-      height: 32px;
+      height: 30px;
       width: 97.3px;
-      color: #111827;
-      font-weight: 500;
-      font-size: 0.875rem;
-      line-height: 1.25rem;
       box-shadow: 0px 15px 25px -2px rgba(0, 0, 0, 0.1),
         0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+      .span {
+        color: #111827;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1rem;
+      }
     }
   }
-
+  //Card Thumb Container
   .thumb {
     height: 120px;
     width: 100%;
@@ -46,6 +51,7 @@
     row-gap: 0.6rem;
     border: solid 1.5px rgba(0, 0, 0, 0.1);
 
+    // Thumb Header text
     .con1 {
       height: 28px;
       width: 100%;
@@ -62,7 +68,7 @@
         cursor: pointer;
       }
     }
-
+    // Thumb Buttom Container
     .con2 {
       position: relative;
       display: flex;
@@ -72,7 +78,7 @@
       height: 55px;
       width: 100%;
 
-      // Author Profile
+      // Author conatiner
       .sbid {
         width: 135px;
         display: flex;
@@ -83,6 +89,7 @@
         line-height: 1rem;
         font-weight: 500;
 
+        // Author Profile photo
         .pic {
           height: 30px;
           width: 30px;
@@ -94,13 +101,13 @@
           background-size: cover;
         }
       }
-
+      // Bid FLex Container
       .vflex {
         display: flex;
         flex-direction: column;
         align-items: center;
         row-gap: 2px;
-
+        // Upper Text
         .t1 {
           font-weight: 400;
           font-size: 0.85rem;
@@ -109,7 +116,7 @@
           text-align: right;
           color: #6b7280;
         }
-
+        // Lower Text
         .t2 {
           font-weight: 600;
           font-size: 1rem;

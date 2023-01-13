@@ -1,6 +1,11 @@
 @import "../../global_styles/helper.scss";
 
-header {
+// header
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     height: 88px;
     width: 100vw;
     display: flex;
@@ -10,7 +15,25 @@ header {
 
 }
 
+// header with background color
+.headerbg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 88px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7vw;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
+
+}
+
+// Left Container
 .c1 {
     display: flex;
     align-items: center;
@@ -18,6 +41,7 @@ header {
 
 }
 
+// Left Container logo
 .logo {
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
@@ -29,7 +53,7 @@ header {
 
 
 }
-
+// Left Container search bar
 .search {
     margin-left: 40px;
     display: flex;
@@ -54,12 +78,12 @@ header {
 }
 
 
-
+// Right Container
 .right {
     display: flex;
     align-items: center;
 }
-
+// Right Container first container
 .c2 {
     display: flex;
     align-items: center;
@@ -87,14 +111,14 @@ header {
     }
 
 }
-
+// Right Container line
 .line {
     height: 24px;
     border: 1px solid #D1D5DB;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
-
+// Right Container Second container
 .c3 {
     display: flex;
     align-items: center;
@@ -128,8 +152,9 @@ header {
     }
 }
 
+// Mobile Drawer Container
 .wrapper {
-
+    margin-right: 20px;
     opacity: 0.8;
 
     &:hover {
@@ -138,7 +163,7 @@ header {
 
     }
 }
-
+// Mobile Drawer hamburger
 .hamburger {
     width: 20px;
     height: 2px;
@@ -174,7 +199,7 @@ header {
 
 // active Hamburge
 .activeHamburger {
-    width: 28px;
+    width: 22px;
     height: 2px;
     border-Radius: 1px;
     transform: translateX(-50px);
@@ -185,7 +210,7 @@ header {
     &::before {
         content: " ";
         position: absolute;
-        width: 28px;
+        width: 22px;
         height: 2px;
         background-color: #374151;
         border-Radius: 1px;
@@ -196,7 +221,7 @@ header {
     &::after {
         content: " ";
         position: absolute;
-        width: 28px;
+        width: 22px;
         height: 2px;
         background-color: #374151;
         border-Radius: 1px;
@@ -261,8 +286,11 @@ header {
         display: none;
     }
 
-    header {
+    .header {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        height: 68px;
+    }
+    .headerbg {
         height: 68px;
     }
 }

@@ -1,0 +1,113 @@
+// Product Container
+.container {
+    margin-top: 88px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    height: 768px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(243, 244, 246, 0.7);
+}
+
+// Product Horizontal flex Container
+.hflex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+// Wrapper for SalesBid Component
+.contain {
+    margin-top: 30px;
+    position: relative;
+    left: 20px;
+    z-index: 2;
+}
+
+// Wrapper for Image
+.contain2 {
+    border-radius: 24px;
+    border: 14px solid #ffffff;
+    height: 550px;
+    width: 540px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+
+}
+
+// Floating like div
+.like {
+    position: relative;
+    left: 79%;
+    top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 9999px;
+    height: 32px;
+    width: 97.3px;
+    box-shadow: 0px 15px 25px -2px rgba(0, 0, 0, 0.1),
+        0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+    span {
+        color: #111827;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+}
+
+// Floating bookmark div
+.bookmark {
+    position: relative;
+    top: 84%;
+    left: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 9999px;
+    box-shadow: 0px 15px 25px -2px rgba(0, 0, 0, 0.1),
+        0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+        
+}
+
+// Vertical flex for sales and bottom buttons
+.vflex {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.hflex2 {
+    
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    left: 50px;
+
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.5px solid rgba(0, 0, 0, 0.1);
+        border-radius: 9999px;
+        height: 35px;
+        width: 35px;
+        background: rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+    }
+}

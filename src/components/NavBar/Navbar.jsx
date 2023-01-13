@@ -7,10 +7,21 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 
 function Navbar() {
+ // Mobile Drawer Setter 
   const [active, setActive] = useState(false);
 
+// change nav color on scroll
+const [color, setColor] = useState(false)
+/* an arrow function to setColor on scroll*/
+ const changeColor = () =>{
+ window.scrollY >=27 ? setColor(true) : setColor(false)
+
+
+}
+window.addEventListener('scroll', changeColor)
+
   return (
-    <header>
+    <header  className={color ? nav.headerbg : nav.header}>
       <div className={nav.c1}>
         <div className={nav.logo}>QueryStore</div>
         <div className={nav.search}>
