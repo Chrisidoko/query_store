@@ -1,5 +1,5 @@
 import React from "react";
-import p from "./cardpost.module.scss";
+import p from "./Cardpost.module.scss";
 import usePost from "../../query_hooks/usePost";
 import { useParams } from "react-router-dom";
 import SalesBid from "../SalesBid/SalesBid";
