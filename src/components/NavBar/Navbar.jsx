@@ -14,7 +14,7 @@ function Navbar() {
 const [color, setColor] = useState(false)
 /* an arrow function to setColor on scroll*/
  const changeColor = () =>{
- window.scrollY >=27 ? setColor(true) : setColor(false)
+ window.scrollY >=6 ? setColor(true) : setColor(false)
 
 
 }
@@ -25,7 +25,7 @@ window.addEventListener('scroll', changeColor)
       <div className={nav.c1}>
         <div className={nav.logo}>QueryStore</div>
         <div className={nav.search}>
-          <span>Search items</span>
+          <input className={nav.input} type="text" placeholder="Search items" />
           <CiSearch size={20} />
         </div>
       </div>

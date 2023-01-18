@@ -1,7 +1,6 @@
 import React from "react";
 import c from "./card.module.scss";
 import { AiOutlineHeart } from "react-icons/ai";
-import {  BsHeart } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 function Card(props) {
@@ -12,7 +11,7 @@ function Card(props) {
         style={{ backgroundImage: `url(${props.urls.thumb})` }}
       >
         <div className={c.like}>
-          <BsHeart />
+          <AiOutlineHeart />
           <span>{props.likes}</span>
           <span>Likes</span>
         </div>

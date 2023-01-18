@@ -1,113 +1,299 @@
 // Product Container
 .container {
-    margin-top: 88px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    font-family: "Poppins", sans-serif;
-    height: 768px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background: rgba(243, 244, 246, 0.7);
+  margin-top: 88px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: rgba(243, 244, 246, 0.7);
 }
 
 // Product Horizontal flex Container
 .hflex {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  width: 100%;
+  justify-content: center;
 }
 
 // Wrapper for SalesBid Component
 .contain {
-    margin-top: 30px;
-    position: relative;
-    left: 20px;
-    z-index: 2;
+  margin-top: 30px;
+  position: relative;
+  left: 20px;
+  z-index: 2;
 }
 
 // Wrapper for Image
 .contain2 {
-    border-radius: 24px;
-    border: 14px solid #ffffff;
+    border-radius: 14px;
+    border: 10px solid #ffffff;
     height: 550px;
-    width: 540px;
+    width: max(450px, 38.5vw);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-
+//Like Container Positioning
+.lflex {
+  display: flex;
+  justify-content: flex-end;
+  width: 98%;
+  margin-top: 7px;
 }
 
 // Floating like container
 .like {
-    position: relative;
-    left: 79%;
-    top: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 9999px;
-    height: 32px;
-    width: 97.3px;
-    box-shadow: 0px 15px 25px -2px rgba(0, 0, 0, 0.1),
-        0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+  height: 32px;
+  width: 97.3px;
+  box-shadow: 0px 15px 25px -2px rgba(0, 0, 0, 0.1),
+    0px 8px 10px -6px rgba(0, 0, 0, 0.1);
 
-    span {
-        color: #111827;
-        font-weight: 500;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-    }
-
+  span {
+    color: #111827;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
+
+//Bookmark Container Positioning
+.lflex2 {
+    display: flex;
+    justify-content: start;
+    width: 98%;
+    margin-left: 10px;
+    margin-bottom: 7px;
+  }
 
 // Floating bookmark div
 .bookmark {
-    position: relative;
-    top: 84%;
-    left: 12px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 9999px;
-    box-shadow: 0px 15px 25px -2px rgba(0, 0, 0, 0.1),
-        0px 8px 10px -6px rgba(0, 0, 0, 0.1);
-        
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  //background:#ffffff;
+  background: rgba(243, 244, 246, 0.7);
+  border-radius: 9999px;
+  box-shadow: 0px 15px 25px -2px rgba(0, 0, 0, 0.1),
+    0px 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 // Vertical flex for sales and bottom buttons
 .vflex {
-    display: flex;
-    flex-direction: column;
-    gap: 24px
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .hflex2 {
-    
-    height: 35px;
-    width: 100%;
+  height: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative;
+  left: 50px;
+
+  div {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    position: relative;
-    left: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 9999px;
+    height: 35px;
+    width: 35px;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+  }
+}
 
+// Mobile ClassNames
 
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1.5px solid rgba(0, 0, 0, 0.1);
-        border-radius: 9999px;
-        height: 35px;
-        width: 35px;
-        background: rgba(255, 255, 255, 0.3);
-        cursor: pointer;
+// Mobile container
+.mobile {
+  padding: 0px 4%;
+}
+
+//header text
+.m_header {
+  color: #22c55e;
+  font-size: 1.5rem;
+  //line-height: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  
+  &:first-letter{
+    text-transform: capitalize;
+  }
+}
+
+//Bid Horizontal flex Container
+.bidflex {
+  border-radius: 14px;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 4%;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 15px 25px -2px rgba(0, 0, 0, 0.1),
+    0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  // Bid FLex Container
+  .vflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2px;
+
+    // Upper Text
+    .t1 {
+      font-weight: 400;
+      font-size: 0.85rem;
+      line-height: 1rem;
+      letter-spacing: 0.019rem;
+      text-align: right;
+      color: #6b7280;
     }
+
+    // Lower Text
+    .t2 {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #111827;
+    }
+  }
+  // time left
+  .m_time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+.detail {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+// Profile Container
+.profile {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  height: 40px;
+  width: 167px;
+
+  .pic {
+    height: 100%;
+    width: 40px;
+    background: rgba(255, 255, 255, 0.002);
+    box-shadow: 0px 0px 0px 1px #ffffff, inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 9999px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .v {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      color: #111827;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1rem;
+
+      &:last-child {
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+    }
+  }
+}
+
+.b_container {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0 5%;
+
+  .button {
+    border-radius: 14px;
+    height: 55px;
+    width: 100%;
+    background: #0284c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+//Responsive BreakPoints
+
+//Large Screen Sizes
+@media (min-width: 601px) {
+  .mobile {
+    display: none;
+  }
+}
+
+// Mobile Breakpoints
+@media (max-width: 600px) {
+  .container {
+    background: #ffffff;
+    border-top: none;
+    margin-top: 66px;
+  }
+
+  .hflex {
+    padding: 5% 13%;
+    flex-direction: column;
+  }
+
+  .contain2 {
+    width: 100%;
+    height: 45vh;
+    border: none;
+    box-shadow: none;
+  }
+
+  .contain {
+    display: none;
+  }
+
+
+  .hflex2 {
+    display: none;
+  }
 }
