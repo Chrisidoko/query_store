@@ -27,19 +27,22 @@
 
 // Wrapper for Image
 .contain2 {
-    border-radius: 14px;
-    border: 10px solid #ffffff;
-    height: 550px;
-    width: max(450px, 38.5vw);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0px 4px 6px -4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  border-radius: 14px;
+  border: 10px solid #ffffff;
+  height: 550px;
+  width: max(450px, 38.5vw);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
+
+
 
 //Like Container Positioning
 .lflex {
@@ -72,12 +75,12 @@
 
 //Bookmark Container Positioning
 .lflex2 {
-    display: flex;
-    justify-content: flex-start;
-    width: 98%;
-    margin-left: 10px;
-    margin-bottom: 7px;
-  }
+  display: flex;
+  justify-content: flex-start;
+  width: 98%;
+  margin-left: 10px;
+  margin-bottom: 7px;
+}
 
 // Floating bookmark div
 .bookmark {
@@ -137,8 +140,8 @@
   //line-height: 1.25rem;
   font-weight: 500;
   margin-bottom: 20px;
-  
-  &:first-letter{
+
+  &:first-letter {
     text-transform: capitalize;
   }
 }
@@ -181,6 +184,7 @@
       color: #111827;
     }
   }
+
   // time left
   .m_time {
     display: flex;
@@ -188,6 +192,7 @@
     gap: 6px;
   }
 }
+
 .detail {
   margin-top: 16px;
   margin-bottom: 16px;

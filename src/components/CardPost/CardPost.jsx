@@ -9,14 +9,12 @@ import {
   AiOutlineClockCircle,
 } from "react-icons/ai";
 import { BsBookmark, BsHeart } from "react-icons/bs";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 function CardPost() {
   const { id } = useParams();
   const { status, data, error } = usePost(id);
-
-  if (status === "loading") {
-    return <p>Loading...</p>;
-  }
 
   if (error) {
     return <p>An error occurred: {error.message}</p>;
@@ -29,10 +27,12 @@ function CardPost() {
           <div className={p.vflex}>
             <div className={p.contain}>
               <SalesBid
-                title={data?.alt_description}
-                seller={data?.user.first_name}
+                title={data?.alt_description || <Skeleton />}
+                seller={data?.user.first_name || <Skeleton />}
                 Bid={data?.downloads}
-                profile={data?.user.profile_image.medium}
+                profile={
+                  data?.user.profile_image.medium || <Skeleton circle={50} />
+                }
               />
             </div>
             <div className={p.hflex2}>
@@ -46,7 +46,9 @@ function CardPost() {
           </div>
           <div
             className={p.contain2}
-            style={{ backgroundImage: `url(${data?.urls.thumb})` }}
+            style={{
+              backgroundImage: `url(${data?.urls.thumb})`,
+            }}
           >
             <div className={p.lflex}>
               <div className={p.like}>
